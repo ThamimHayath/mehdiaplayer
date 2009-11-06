@@ -1,0 +1,39 @@
+UPlay CHANGELOG
+---------------
+
+0.1f:
+-	Bugfix: when a song is removed, the currently played media ID must change
+-	Bugfix: the random will not replay the same song
+-	Bugfix: fixed a bug with the metadata resolver
+-	Add a 'save playlist on quit' in the settings tab
+
+0.1e:
+-	Currently played song is now bold in the playlist
+-	Pause
+-	Double-click in the video enter/exit fullscreen
+-	Add a context menu for files in folder view
+-	Change: Folder view is now case-insensitively
+
+0.1d: 27/06/2009
+-	Save directory and random state at exit
+-	Bugfix: 'Play button' doesn't have a 'next button' behavior anymore
+-	Bugfix: Button 'Clear' clear the widget list AND sources
+
+
+0.1c: 26/06/2009
+-	A click on the tray icon show/hide the main dialog
+
+0.1b: 26/06/2009
+-	'Clear' button in the playlist
+-	'Browse' button in the settings
+-	If no track selected and play button clicked, try to play the first song in the playlist
+
+0.1:  23/06/2009
+-	Normal/small display
+-	Playlist
+-	Folder view
+-	Play audio
+-	Save playlist, load at startup
+-	Drag'n'drop
+-	Tray icon/boxes
+
