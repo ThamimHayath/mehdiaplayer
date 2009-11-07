@@ -2,13 +2,13 @@
 #include <QtCore>
 #include <QtGui>
 
-#include "UPlay.h"
+#include "MehdiaPlayer.h"
 #include "UI.h"
 #include "Engine.h"
 
 int main(int argc, char  * argv[])
 {
-	UPlay app(argc, argv);
+	MehdiaPlayer app(argc, argv);
 	app.setApplicationName("uplay");
 	app.setQuitOnLastWindowClosed(true);
 

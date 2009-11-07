@@ -13,5 +13,5 @@ OBJECTS_DIR = build/
 MOC_DIR = build/
 
 # Input
-HEADERS += src/Engine.h src/UPlay.h src/UI.h src/UIPlaylist.h src/UIFolder.h src/UIControl.h src/UISettings.h src/UPlay_VideoWidget.h
-SOURCES += src/Engine.cpp src/main.cpp  src/UPlay.cpp src/UI.cpp src/UIPlaylist.cpp src/UIFolder.cpp src/UIControl.cpp src/UISettings.cpp src/UPlay_VideoWidget.cpp
+HEADERS += src/Engine.h src/MehdiaPlayer.h src/UI.h src/UIPlaylist.h src/UIFolder.h src/UIControl.h src/UISettings.h src/MehdiaPlayer_VideoWidget.h
+SOURCES += src/Engine.cpp src/main.cpp  src/MehdiaPlayer.cpp src/UI.cpp src/UIPlaylist.cpp src/UIFolder.cpp src/UIControl.cpp src/UISettings.cpp src/MehdiaPlayer_VideoWidget.cpp

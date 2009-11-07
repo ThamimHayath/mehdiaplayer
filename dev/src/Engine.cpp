@@ -1,16 +1,17 @@
 #include <iostream>
 #include <QtGui>
 
-#include "UPlay.h"
+#include "Engine.h"
+#include "MehdiaPlayer.h"
 
-Engine::Engine(UPlay* parent)
+Engine::Engine(MehdiaPlayer* parent)
 {
 	this->parent = parent;
 	
 	// Phonon init
 	audioOutput = new Phonon::AudioOutput(Phonon::MusicCategory);
 	mediaObject = new Phonon::MediaObject();	
-	videoWidget = new UPlay_VideoWidget(parent);
+	videoWidget = new MehdiaPlayer_VideoWidget(parent);
 	seekSlider = new Phonon::SeekSlider();
 	Phonon::createPath(mediaObject,audioOutput);
 	Phonon::createPath(mediaObject,videoWidget);

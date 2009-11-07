@@ -3,7 +3,7 @@
 
 #include <QtGui>
 
-class UPlay;
+class MehdiaPlayer;
 
 class UIFolder : public QWidget
 {
@@ -12,7 +12,7 @@ class UIFolder : public QWidget
 		/*
 		 * Constructor
 		 */
-		UIFolder(UPlay* parent, QString musicPath);
+		UIFolder(MehdiaPlayer* parent, QString musicPath);
 		~UIFolder();
  
 		/*
@@ -54,7 +54,7 @@ class UIFolder : public QWidget
 		void addFile(QString uri);
 		void addFolder(QString uri);
 
-		UPlay* parent;
+		MehdiaPlayer* parent;
 };
 
 #endif // UIFOLDER_H

@@ -5,7 +5,7 @@
 #include <phonon/mediaobject.h>
 
 
-class UPlay;
+class MehdiaPlayer;
 
 class UIControl : public QWidget
 {
@@ -14,7 +14,7 @@ class UIControl : public QWidget
 		/*
 		 * Constructor
 		 */
-		UIControl(UPlay* parent);
+		UIControl(MehdiaPlayer* parent);
 		~UIControl();
 		
 		/*
@@ -61,7 +61,7 @@ class UIControl : public QWidget
 		QCheckBox* random;
 		QHBoxLayout *layoutControl;
 
-		UPlay* parent;
+		MehdiaPlayer* parent;
 };
 
 #endif // UICONTROL_H

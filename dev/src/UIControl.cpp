@@ -1,7 +1,7 @@
 #include "UIControl.h"
-#include "UPlay.h"
+#include "MehdiaPlayer.h"
 
-UIControl::UIControl(UPlay* parent)
+UIControl::UIControl(MehdiaPlayer* parent)
 {
 	this->parent = parent;
 

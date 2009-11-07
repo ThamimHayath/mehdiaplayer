@@ -1,9 +1,9 @@
 #include <iostream>
 #include <QtGui>
 
-#include "UPlay.h"
+#include "MehdiaPlayer.h"
 
-UIFolder::UIFolder(UPlay* parent, QString musicPath)
+UIFolder::UIFolder(MehdiaPlayer* parent, QString musicPath)
 {
 	this->parent = parent;
 

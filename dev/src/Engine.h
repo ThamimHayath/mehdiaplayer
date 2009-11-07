@@ -9,7 +9,7 @@
 #include <phonon/mediaobject.h>
 #include <phonon/mediasource.h>
 
-#include "UPlay_VideoWidget.h"
+#include "MehdiaPlayer_VideoWidget.h"
 
 typedef struct Media
 {
@@ -19,13 +19,13 @@ typedef struct Media
 	QString totalTime;
 } Media;
 
-class UPlay;
+class MehdiaPlayer;
 
 class Engine : public QObject
 {
 	Q_OBJECT
 	public:
-		Engine(UPlay *parent);
+		Engine(MehdiaPlayer *parent);
 
 		~Engine();
 
@@ -147,7 +147,7 @@ class Engine : public QObject
 		QVector<QString> listToAdd;
 		//Media tmpMedia;
 		
-		UPlay* parent;
+		MehdiaPlayer* parent;
 };
 
 #endif

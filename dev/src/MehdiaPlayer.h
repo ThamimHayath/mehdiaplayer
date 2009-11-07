@@ -7,15 +7,15 @@
 #include "Engine.h"
 #include "UI.h"
 
-class UPlay : public QApplication
+class MehdiaPlayer : public QApplication
 {
 		Q_OBJECT
 	public:
-		UPlay(int& argc, char** argv);
+		MehdiaPlayer(int& argc, char** argv);
 		/*
 		 * Destructor
 		 */
-		~UPlay();
+		~MehdiaPlayer();
 
 		/*
 		 * The media engine

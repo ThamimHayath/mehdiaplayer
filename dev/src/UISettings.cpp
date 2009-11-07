@@ -1,9 +1,9 @@
 #include <iostream>
 #include <QtGui>
 
-#include "UPlay.h"
+#include "MehdiaPlayer.h"
 
-UISettings::UISettings(UPlay* parent, QString& musicPath)
+UISettings::UISettings(MehdiaPlayer* parent, QString& musicPath)
 {
 	this->parent = parent;
 	

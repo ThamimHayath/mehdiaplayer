@@ -1,9 +1,9 @@
 #include <iostream>
-#include "UPlay.h"
+#include "MehdiaPlayer.h"
 #include "UI.h"
 #include "Engine.h"
 
-UPlay::UPlay(int & argc, char** argv) : QApplication(argc,argv)
+MehdiaPlayer::MehdiaPlayer(int & argc, char** argv) : QApplication(argc,argv)
 {
 	setApplicationName("uplay");
 	musicPath = "/"; // default path : root
@@ -13,7 +13,7 @@ UPlay::UPlay(int & argc, char** argv) : QApplication(argc,argv)
 	connect(this, SIGNAL(aboutToQuit()), SLOT(onQuit()));
 }
 
-UPlay::~UPlay()
+MehdiaPlayer::~MehdiaPlayer()
 {
 	if (engine)
 		delete engine;
@@ -22,13 +22,13 @@ UPlay::~UPlay()
 }
 
 void
-UPlay::addMedia(QString uri)
+MehdiaPlayer::addMedia(QString uri)
 {
 	engine->addMedia(uri);
 }
 
 void
-UPlay::onQuit()
+MehdiaPlayer::onQuit()
 {
 	saveConf();
 	if (ui->getSettings().getSaveOnQuitState())
@@ -36,7 +36,7 @@ UPlay::onQuit()
 }
 
 void
-UPlay::restorePlaylist()
+MehdiaPlayer::restorePlaylist()
 {
 	QFile file(QDir::homePath() + "/.uplay_list");
 	if (file.open(QIODevice::ReadOnly | QIODevice::Text))
@@ -52,7 +52,7 @@ UPlay::restorePlaylist()
 }
 
 void
-UPlay::restoreConf()
+MehdiaPlayer::restoreConf()
 {
 	QFile file(QDir::homePath() + "/.uplayrc");
 	if (file.open(QIODevice::ReadOnly | QIODevice::Text))
@@ -98,7 +98,7 @@ UPlay::restoreConf()
 }
 
 void
-UPlay::play(int row)
+MehdiaPlayer::play(int row)
 {
 	switch (engine->getReadingState())
 	{
@@ -125,13 +125,13 @@ UPlay::play(int row)
 }
 
 void
-UPlay::stop()
+MehdiaPlayer::stop()
 {
 	engine->stop();
 }
 
 void
-UPlay::next()
+MehdiaPlayer::next()
 {
 	int n = engine->getCurrentPlayedMedia();
 	if (ui->random)
@@ -161,7 +161,7 @@ UPlay::next()
 }
 
 void
-UPlay::prev()
+MehdiaPlayer::prev()
 {
 	int n = engine->getCurrentPlayedMedia();
 	n--;
@@ -174,7 +174,7 @@ UPlay::prev()
 }
 
 void
-UPlay::saveConf()
+MehdiaPlayer::saveConf()
 {
 	if (ui)
 	{

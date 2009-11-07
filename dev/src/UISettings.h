@@ -4,7 +4,7 @@
 #include <QtCore>
 #include <QtGui>
 
-class UPlay;
+class MehdiaPlayer;
 
 class UISettings : public QWidget
 {
@@ -13,7 +13,7 @@ class UISettings : public QWidget
 		/*
 		 * Constructor
 		 */
-		UISettings(UPlay* parent, QString& musicPath);
+		UISettings(MehdiaPlayer* parent, QString& musicPath);
 		~UISettings();
 
 		/**
@@ -67,7 +67,7 @@ class UISettings : public QWidget
 		QLabel* labelDirectory;
 		QCheckBox* saveOnQuit;
 
-		UPlay* parent;
+		MehdiaPlayer* parent;
 };
 
 #endif // UIPLAYLIST_H

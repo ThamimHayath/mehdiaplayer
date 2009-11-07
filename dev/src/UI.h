@@ -8,13 +8,13 @@
 #include "UISettings.h"
 #include "UIControl.h"
 
-class UPlay;
+class MehdiaPlayer;
 
 class UI : public QWidget
 {
 		Q_OBJECT
 	public:
-		UI(UPlay* parent,QString& musicPath);
+		UI(MehdiaPlayer* parent,QString& musicPath);
 		~UI();
 
 		/*
@@ -133,7 +133,7 @@ class UI : public QWidget
 		void dragEnterEvent(QDragEnterEvent* event);
 		void dropEvent(QDropEvent* event);
 
-		UPlay* parent;
+		MehdiaPlayer* parent;
 };
 
 #endif // UI_H

@@ -5,18 +5,18 @@
 
 #include <phonon/videowidget.h>
 
-class UPlay;
+class MehdiaPlayer;
 
-class UPlay_VideoWidget : public Phonon::VideoWidget
+class MehdiaPlayer_VideoWidget : public Phonon::VideoWidget
 {
 	Q_OBJECT
 	public:
-		UPlay_VideoWidget(UPlay* p) : parent(p) { };
+		MehdiaPlayer_VideoWidget(MehdiaPlayer* p) : parent(p) { };
 
 		void mouseDoubleClickEvent(QMouseEvent* event);	
 
 	private:
-		UPlay* parent;
+		MehdiaPlayer* parent;
 };
 
 #endif // UPLAY_VIDEOWIDGET

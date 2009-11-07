@@ -1,9 +1,9 @@
 #include <iostream>
 #include <QtGui>
 
-#include "UPlay.h"
+#include "MehdiaPlayer.h"
 
-UIPlaylist::UIPlaylist(UPlay* parent)
+UIPlaylist::UIPlaylist(MehdiaPlayer* parent)
 {
 	this->parent = parent;
 
