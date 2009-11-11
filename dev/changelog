@@ -1,11 +1,12 @@
 CHANGELOG
 ---------------
 
-0.1f:
+0.2
 -	Bugfix: when a song is removed, the currently played media ID must change
 -	Bugfix: the random will not replay the same song
 -	Bugfix: fixed a bug with the metadata resolver
 -	Add a 'save playlist on quit' in the settings tab
+-	Add volume control
 
 0.1e:
 -	Currently played song is now bold in the playlist

@@ -32,6 +32,9 @@ Engine::Engine(MehdiaPlayer* parent)
 	seekLayout->addWidget(totalTime);
 	
 	seekLayout->setEnabled(true);
+	
+	volumeSlider = new Phonon::VolumeSlider(audioOutput);
+	//volumeSlider->setMaximumWidth(90);
 
 	// meta tag resolver
 	mediaObjectForMetaInfos = new Phonon::MediaObject();
@@ -69,6 +72,8 @@ Engine::~Engine()
 		delete totalTime; totalTime = NULL;
 	if (mediaObjectForMetaInfos)
 		delete mediaObjectForMetaInfos; mediaObjectForMetaInfos = NULL;
+	if (volumeSlider)
+		delete volumeSlider; volumeSlider = NULL;
 }
 
 void

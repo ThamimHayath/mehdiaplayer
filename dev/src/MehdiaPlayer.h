@@ -1,5 +1,5 @@
-#ifndef UPLAY_H
-#define UPLAY_H
+#ifndef MEHDIAPLAYER_H
+#define MEHDIAPLAYER_H
 
 #include <QtCore>
 #include <QtGui>
@@ -58,4 +58,4 @@ class MehdiaPlayer : public QApplication
 		QString musicPath;
 };
 
-#endif
+#endif // MEHDIAPLAYER

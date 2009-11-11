@@ -1,5 +1,5 @@
-#ifndef UPLAY_VIDEOWIDGET
-#define UPLAY_VIDEOWIDGET
+#ifndef MEHDIAPLAYER_VIDEOWIDGET
+#define MEHDIAPLAYER_VIDEOWIDGET
 
 #include <QtGui>
 
@@ -19,4 +19,4 @@ class MehdiaPlayer_VideoWidget : public Phonon::VideoWidget
 		MehdiaPlayer* parent;
 };
 
-#endif // UPLAY_VIDEOWIDGET
+#endif // MEHDIAPLAYER_VIDEOWIDGET

@@ -66,9 +66,9 @@ class UI : public QWidget
 		}
 
 		bool
-		isHide()
+		isHidden()
 		{
-			return hiden;
+			return hidden;
 		}
 
 		void
@@ -128,7 +128,7 @@ class UI : public QWidget
 		QAction* trayPlay;
 		QAction* trayQuit;
 
-		bool hiden;
+		bool hidden;
 		
 		void dragEnterEvent(QDragEnterEvent* event);
 		void dropEvent(QDropEvent* event);

@@ -71,7 +71,6 @@ UI::UI(MehdiaPlayer* parent, QString& musicPath)
 	setAcceptDrops(true);
 
 	// UI
-	setMinimumSize(250,80);
 	setLayout(mainLayout);
 	show();
 }
@@ -89,6 +88,7 @@ void
 UI::toggleInterface()
 {
 	tab->setVisible(!tab->isVisible());
+	adjustSize(); // TODO find a better solution than call 2 times the func...
 	adjustSize();
 }
 	
@@ -190,9 +190,9 @@ UI::tClicked(QSystemTrayIcon::ActivationReason reason)
 void
 UI::switchHide()
 {
-	if (hiden == true) { hiden = false; }
-	else { hiden = true;  }
-	if (hiden)
+	if (hidden == true) { hidden = false; }
+	else { hidden = true;  }
+	if (hidden)
 	{
 		hide();
 	}

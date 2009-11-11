@@ -12,7 +12,7 @@ UIControl::UIControl(MehdiaPlayer* parent)
 	buttonPlay = new QPushButton(s->standardIcon(QStyle::SP_MediaPlay),"");
 	buttonNext = new QPushButton(s->standardIcon(QStyle::SP_MediaSkipForward),"");
 	buttonToggle = new QPushButton(s->standardIcon(QStyle::SP_FileIcon),"");
-	random = new QCheckBox("Random");
+	random = new QCheckBox("Rand");
 
 	buttonNext->setFixedSize(30,30);	
 	buttonStop->setFixedSize(30,30);
@@ -29,6 +29,7 @@ UIControl::UIControl(MehdiaPlayer* parent)
 	layoutControl->addWidget(buttonNext);
 	layoutControl->addWidget(buttonToggle);
 	layoutControl->addWidget(random);
+	layoutControl->addWidget(parent->engine->getVolumeSlider());
 	layoutControl->setSpacing(0);
 	layoutControl->setAlignment(Qt::AlignCenter);
 	

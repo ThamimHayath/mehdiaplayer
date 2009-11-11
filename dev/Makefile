@@ -15,7 +15,7 @@ CFLAGS        = -pipe -march=i686 -mtune=generic -O2 -pipe -Wall -W -D_REENTRANT
 CXXFLAGS      = -pipe -march=i686 -mtune=generic -O2 -pipe -Wall -W -D_REENTRANT $(DEFINES)
 INCPATH       = -I/usr/share/qt/mkspecs/linux-g++ -I. -I/usr/include/QtCore -I/usr/include/QtGui -I/usr/include/phonon -I/usr/include -I. -Isrc -I/usr/include/phonon_compat/phonon -I/usr/include/phonon_compat -I/usr/include/phonon/Phonon -Ibuild
 LINK          = g++
-LFLAGS        = -Wl,-O1
+LFLAGS        = -Wl,-O2
 LIBS          = $(SUBLIBS)  -L/usr/lib -lphonon -L/usr/lib -lQtDBus -pthread -pthread -pthread -pthread -pthread -pthread -lQtXml -pthread -pthread -pthread -pthread -pthread -pthread -pthread -pthread -L/usr/X11R6/lib -pthread -pthread -pthread -pthread -pthread -pthread -pthread -pthread -lQtGui -pthread -lpng -lfreetype -lgobject-2.0 -lSM -lICE -pthread -pthread -lXrender -lfontconfig -lXext -lX11 -lQtCore -lz -lm -pthread -lgthread-2.0 -lrt -lglib-2.0 -ldl -lpthread
 AR            = ar cqs
 RANLIB        = 

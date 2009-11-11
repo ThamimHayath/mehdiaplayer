@@ -6,6 +6,7 @@
 #include <phonon/seekslider.h>
 #include <phonon/audiooutput.h>
 #include <phonon/videowidget.h>
+#include <phonon/volumeslider.h>
 #include <phonon/mediaobject.h>
 #include <phonon/mediasource.h>
 
@@ -55,6 +56,15 @@ class Engine : public QObject
 		{
 			return videoWidget;
 		}
+
+		/*
+		 *  Return the instance of the volume slider
+		 */
+		Phonon::VolumeSlider* getVolumeSlider()
+		{
+			return volumeSlider;
+		}
+
 
 		/*
 		 * Add a media
@@ -136,6 +146,7 @@ class Engine : public QObject
 		Phonon::AudioOutput* audioOutput;
 		Phonon::MediaObject* mediaObject;	
 		Phonon::VideoWidget* videoWidget;
+		Phonon::VolumeSlider* volumeSlider;
 		Phonon::MediaObject* mediaObjectForMetaInfos;
 
 		QHBoxLayout* seekLayout;
